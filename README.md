@@ -24,4 +24,4 @@ Use the following command to download and install the Go-Do CLI in your Go's too
 go install github.com/JorgeToAn/go-do@latest
 ```
 
-To verify if the CLI was installed corrrectly, use `godo --version`.
+To verify if the CLI was installed corrrectly, use `go-do version`.
