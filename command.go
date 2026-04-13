@@ -38,6 +38,10 @@ func printCommands() {
 func availableCommands() []command {
 	cmds := []command{
 		{
+			Name:        "configure",
+			Description: "sets the config file values",
+		},
+		{
 			Name:        "help",
 			Description: "prints this help message",
 		},
