@@ -44,6 +44,7 @@ func main() {
 	}
 	cmds.register("configure", handlerConfigure)
 	cmds.register("register", handlerRegister)
+	cmds.register("login", handlerLogin)
 	cmds.register("help", handlerHelp)
 	cmds.register("version", handlerVersion)
 

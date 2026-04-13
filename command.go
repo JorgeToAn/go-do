@@ -46,6 +46,10 @@ func availableCommands() []command {
 			Description: "creates a new user",
 		},
 		{
+			Name:        "login",
+			Description: "change the current user",
+		},
+		{
 			Name:        "help",
 			Description: "prints this help message",
 		},
