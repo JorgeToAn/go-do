@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"fmt"
 )
 
 type command struct {
@@ -25,4 +26,25 @@ func (c *commands) run(s *state, cmd command) error {
 	}
 
 	return handler(s, cmd)
+}
+
+func printCommands() {
+	cmds := availableCommands()
+	for _, cmd := range cmds {
+		fmt.Printf("  %s  %s\n", cmd.Name, cmd.Description)
+	}
+}
+
+func availableCommands() []command {
+	cmds := []command{
+		{
+			Name:        "help",
+			Description: "prints this help message",
+		},
+		{
+			Name:        "version",
+			Description: "prints the go-do cli version",
+		},
+	}
+	return cmds
 }
