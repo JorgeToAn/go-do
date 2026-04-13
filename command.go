@@ -42,6 +42,10 @@ func availableCommands() []command {
 			Description: "sets the config file values",
 		},
 		{
+			Name:        "register",
+			Description: "creates a new user",
+		},
+		{
 			Name:        "help",
 			Description: "prints this help message",
 		},
